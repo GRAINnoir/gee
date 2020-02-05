@@ -14,4 +14,12 @@ function App() {
   );
 }
 
+// class App extends React.Component {
+//   render() {
+//     return (
+//       <div className="App">Hello {this.props.name}</div>
+//     )
+//   }
+// }
+
 export default App;
