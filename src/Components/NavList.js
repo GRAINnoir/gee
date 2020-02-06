@@ -3,7 +3,7 @@ import './styles/NavList.css';
 
 function ListItem(props) {
     return (
-        <li className="ListItem"><a href="#">{props.name}</a></li>
+        <li className="ListItem"><a href="./">{props.name}</a></li>
     )
 }
 
