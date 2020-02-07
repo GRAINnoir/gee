@@ -11,4 +11,8 @@ function ContentSection(props) {
     )
 }
 
+ContentSection.defaultProps = {
+    text: 'CONTENT'
+};
+
 export default ContentSection;
