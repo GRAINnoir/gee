@@ -1,14 +1,39 @@
 import React from 'react';
 import './styles/NavList.css';
 
-function ListButton(props) {
-    return (
-        <li className="ListItem">
+// function ListButton(props) {
+//     return (
+//         <li className="ListItem">
+//             <button>
+//                 {props.name}
+//             </button>
+//         </li>
+//     )
+// }
+
+class ListButton extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            linkName: "CONTENT"
+        };
+
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick(e) {
+        document.querySelector(".ContentSection div").textContent = e.target.textContent;
+    };
+
+    render() {
+        return(
+        <li className="ListItem" onClick={e => this.handleClick(e)}>
             <button>
-                {props.name}
+                {this.props.name}
             </button>
         </li>
-    )
+        )
+    }
 }
 
 // function ListItem(props) {
