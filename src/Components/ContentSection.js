@@ -5,7 +5,7 @@ function ContentSection(props) {
     return (
         <section className="ContentSection">
             <div>
-                CONTENT
+                {props.text}
             </div>
         </section>
     )
